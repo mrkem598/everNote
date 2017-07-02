@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({
 app.use(express.static("public"));
 
 // Database configuration
-var databaseUrl = "week18day2";
+var databaseUrl = "everNote";
 var collections = ["notes"];
 
 // Hook mongojs config to db variable
