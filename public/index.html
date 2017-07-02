@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <title>NoteTaker</title>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <style media="screen">
       body {
         text-align: center;
-        background-color: cornflowerblue;
+        background-image: url("background.jpg");
       }
       h1 {
         font-size: 40px;
@@ -20,33 +26,38 @@
         text-align: right;
       }
       input {
-        width: 400px;
-        height: 50px;
+        width: 800px;
+        height: 150px;
         margin-left: auto;
         margin-right: auto;
         font-size: 42px;
         background-color: antiquewhite;
       }
       textarea {
-        width: 400px;
-        height: 400px;
+        width: 800px;
+        height: 500px;
         margin-left: auto;
         margin-right: auto;
         font-size: 24px;
-        background-color: antiquewhite;
+        background-image: url("paper.jpg");
 
       }
       .dataTitle {
         cursor: pointer;
         font-size: 24px;
       }
+      #navbar-brand {
+        text-align: center;
+        font-size: 40px;
+        font-style: oblique;
+      }
       #results {
-        width: 400px;
-        height: 200px;
+        width: 800px;
+        height: 300px;
         overflow: auto;
         margin-left: auto;
         margin-right: auto;
-        background-color: antiquewhite;
+        background-color: green;
       }
       #actionbutton {
         display: inline-block;
@@ -57,9 +68,13 @@
     </style>
   </head>
   <body>
-    <h1>Mongo Note App</h1>
+    <nav class="navbar sticky-top navbar-inverse bg-primary">
+        <a id="navbar-brand" href="#">everNote</a>
+    </nav>
     <div id="userinput">
-        <p>Title</p>
+        <p>Write your Note once Keep it forever!  <span class="glyphicon glyphicon-pencil"></span></p>
+        <p>Note Title<nav>
+        </nav></p>
         <input type="text" id="title" />
       <br>
         <p>Note</p>
